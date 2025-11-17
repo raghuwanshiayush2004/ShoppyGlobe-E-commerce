@@ -23,6 +23,12 @@ const Checkout = () => {
     cvv: ''
   });
 
+const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
 
 
   const handlePlaceOrder = (e) => {
