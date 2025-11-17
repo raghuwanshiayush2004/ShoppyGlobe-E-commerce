@@ -10,10 +10,16 @@ const Login = () => {
     password: ''
   });
 
-  
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { loading, error } = useSelector(state => state.auth);
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
 
 
 
@@ -33,7 +39,7 @@ const Login = () => {
 
         <form onSubmit={handleSubmit} className="auth-form">
           {error && <div className="auth-error">{error}</div>}
-          
+
           <div className="form-group">
             <label htmlFor="email">Email Address</label>
             <input
