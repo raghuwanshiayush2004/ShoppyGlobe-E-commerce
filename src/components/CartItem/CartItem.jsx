@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux';
 import { removeFromCart, updateQuantity } from '../../store/actions/cartActions';
 import './CartItem.css';
 
+const CartItem = ({ item }) => {
+  const dispatch = useDispatch();
 
 
   const handleRemove = () => {
