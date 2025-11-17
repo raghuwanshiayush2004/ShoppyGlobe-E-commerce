@@ -16,7 +16,11 @@ const ProductItem = ({ product }) => {
     <div className="product-item">
       <Link to={`/product/${product.id}`} className="product-link">
         <div className="product-image">
-
+          <img 
+          src="{product.thumbnail}" 
+          alt="{product.title}" 
+          loading="lazy" 
+          />
         </div>
         <div className="product-info">
           <h3 className="product-title">{product.title}</h3>
