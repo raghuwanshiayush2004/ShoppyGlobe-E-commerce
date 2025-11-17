@@ -22,6 +22,10 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
+        <Link to="/" className="logo" onClick={() => setIsMenuOpen(false)}>
+          <div className="logo-icon">🛍️</div>
+          <h1>ShoppyGlobe</h1>
+        </Link>
 
 
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
