@@ -4,8 +4,16 @@ import { useDispatch, useSelector } from 'react-redux';
 import { signup } from '../../store/actions/authActions';
 import './Auth.css';
 
+const Signup = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
+  });
 
-  
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { loading, error } = useSelector(state => state.auth);
@@ -14,12 +22,12 @@ import './Auth.css';
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     if (formData.password !== formData.confirmPassword) {
       alert("Passwords don't match!");
       return;
     }
-    
+
     dispatch(signup(formData, navigate));
   };
 
@@ -34,7 +42,7 @@ import './Auth.css';
 
         <form onSubmit={handleSubmit} className="auth-form">
           {error && <div className="auth-error">{error}</div>}
-          
+
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="firstName">First Name</label>
@@ -48,7 +56,7 @@ import './Auth.css';
                 placeholder="First name"
               />
             </div>
-            
+
             <div className="form-group">
               <label htmlFor="lastName">Last Name</label>
               <input
