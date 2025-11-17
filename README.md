@@ -2,6 +2,8 @@
 
 A fully-featured e-commerce web application built with React, Vite, and Redux for state management.
 
+## GitHub Link: https://github.com/raghuwanshiayush2004/ShoppyGlobe-E-commerce
+
 ## 🚀 Features
 
 - **Product Catalog** - Browse and search products
