@@ -23,6 +23,10 @@ const Categories = () => {
 
     fetchCategories();
   }, []);
+  const handleCategoryClick = (categorySlug) => {
+    // Navigate to home page with category filter
+    navigate(`/?category=${categorySlug}`);
+  };
 
 
 
