@@ -4,6 +4,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../../store/actions/authActions';
 import './Auth.css';
 
+const Login = () => {
+  const [formData, setFormData] = useState({
+    email: '',
+    password: ''
+  });
 
   
   const dispatch = useDispatch();
