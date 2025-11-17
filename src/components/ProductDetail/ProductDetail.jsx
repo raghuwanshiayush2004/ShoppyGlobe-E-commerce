@@ -31,6 +31,12 @@ const handleAddToCart = () => {
     }
     alert(`${quantity} ${product.title} added to cart!`);
   };
+const handleBuyNow = () => {
+    if (!isAuthenticated) {
+      alert('Please login to proceed with purchase!');
+      navigate('/login');
+      return;
+    }
 
 
     handleAddToCart();
