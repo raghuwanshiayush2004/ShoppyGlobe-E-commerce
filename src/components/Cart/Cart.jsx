@@ -9,6 +9,19 @@ const Cart = () => {
   const cartItems = useSelector(getCartItems);
   const cartTotal = useSelector(getCartTotal);
 
+if (cartItems.length === 0) {
+    return (
+      <div className="cart empty-cart">
+        <div className="container">
+          <h2>Your Cart</h2>
+          <div className="empty-cart-message">
+            <p>Your cart is empty</p>
+            <Link to="/" className="continue-shopping">Continue Shopping</Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
 
   
