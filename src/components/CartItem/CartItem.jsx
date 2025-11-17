@@ -10,6 +10,11 @@ const CartItem = ({ item }) => {
   const handleRemove = () => {
     dispatch(removeFromCart(item.id));
   };
+  const handleQuantityChange = (newQuantity) => {
+    if (newQuantity >= 1) {
+      dispatch(updateQuantity(item.id, newQuantity));
+    }
+  };
 
 
 
