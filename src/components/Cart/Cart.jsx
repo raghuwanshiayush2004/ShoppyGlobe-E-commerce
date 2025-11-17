@@ -23,6 +23,15 @@ if (cartItems.length === 0) {
     );
   }
 
+return (
+    <div className="cart">
+      <div className="container">
+        <h2>Your Cart</h2>
+        <div className="cart-content">
+          <div className="cart-items">
+            {cartItems.map(item => (
+              <CartItem key={item.id} item={item} />
+            ))}
 
   
           </div>
