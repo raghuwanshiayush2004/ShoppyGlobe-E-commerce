@@ -21,6 +21,9 @@ useEffect(() => {
     }
   }, [searchParams]);
 
+ const setSearchTerm = (term) => {
+    dispatch({ type: 'SET_SEARCH_TERM', payload: term });
+  };
 
 
 
