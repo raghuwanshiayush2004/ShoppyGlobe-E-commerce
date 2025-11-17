@@ -13,7 +13,7 @@ const About = () => {
         <div className="about-content">
           <section className="about-section">
             <div className="about-text">
-              <><h2>🌟 Our Story</h2>
+              <h2>🌟 Our Story</h2>
                 <p>
                   Welcome to ShoppyGlobe, your premier online shopping destination.
                   We're committed to providing you with the very best products,
@@ -24,7 +24,7 @@ const About = () => {
                   When we first started out, our passion for providing the best shopping
                   experience drove us to do intense research and gave us the impetus to
                   turn hard work and inspiration into a booming online store.
-                </p></>
+                </p>
             </div>
             <div className="about-image">
               <div className="image-placeholder">🛍️</div>
