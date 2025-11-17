@@ -12,6 +12,10 @@ const Footer = () => {
               <div className="logo-icon">🛍️</div>
               <h3>ShoppyGlobe</h3>
             </div>
+            <p className="footer-description">
+              Your trusted online shopping destination. We provide the best products 
+              with excellent customer service and fast delivery.
+            </p>
 
             <div className="social-links">
               <a href="#" className="social-link">📘</a>
