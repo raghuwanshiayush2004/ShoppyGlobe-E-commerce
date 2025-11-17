@@ -14,6 +14,12 @@ const ProductList = () => {
   const [selectedCategory, setSelectedCategory] = useState('');
 
   // Get category from URL parameters
+useEffect(() => {
+    const category = searchParams.get('category');
+    if (category) {
+      setSelectedCategory(category);
+    }
+  }, [searchParams]);
 
 
 
