@@ -36,7 +36,11 @@ const handleInputChange = (e) => {
     // Simulate order processing
     setOrderPlaced(true);
     dispatch(clearCart());
-    
+        setTimeout(() => {
+      navigate('/');
+    }, 3000);
+  };
+
 
 
   if (orderPlaced) {
