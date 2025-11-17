@@ -7,6 +7,9 @@ import './ProductItem.css';
 const ProductItem = ({ product }) => {
   const dispatch = useDispatch();
 
+  const handleAddToCart = () => {
+    dispatch(addToCart(product));
+  };
 
 
   return (
