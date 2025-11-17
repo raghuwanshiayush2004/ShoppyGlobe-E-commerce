@@ -40,7 +40,7 @@ Follow these steps to run the application locally:
 ```bash
 # Clone the repository
 git clone <your-repo-url>
-cd shoppyglobe
+cd ShoppyGlobe-E-commerce
 ```
 ### 2. Install dependencies
 npm install
