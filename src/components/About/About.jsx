@@ -20,7 +20,7 @@ const About = () => {
                 with a focus on quality, customer service, and uniqueness.
               </p>
               <p>
-                Founded in 2024, ShoppyGlobe has come a long way from its beginnings. 
+                Founded in 2025, ShoppyGlobe has come a long way from its beginnings. 
                 When we first started out, our passion for providing the best shopping 
                 experience drove us to do intense research and gave us the impetus to 
                 turn hard work and inspiration into a booming online store.
