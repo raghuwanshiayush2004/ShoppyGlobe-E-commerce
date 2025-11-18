@@ -11,15 +11,14 @@ const ProductItem = ({ product }) => {
     dispatch(addToCart(product));
   };
 
-
   return (
     <div className="product-item">
       <Link to={`/product/${product.id}`} className="product-link">
         <div className="product-image">
           <img 
-          src="{product.thumbnail}" 
-          alt="{product.title}" 
-          loading="lazy" 
+            src={product.thumbnail} 
+            alt={product.title}
+            loading="lazy"
           />
         </div>
         <div className="product-info">

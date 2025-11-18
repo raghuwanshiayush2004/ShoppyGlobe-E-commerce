@@ -6,17 +6,15 @@ import './CartItem.css';
 const CartItem = ({ item }) => {
   const dispatch = useDispatch();
 
-
   const handleRemove = () => {
     dispatch(removeFromCart(item.id));
   };
+
   const handleQuantityChange = (newQuantity) => {
     if (newQuantity >= 1) {
       dispatch(updateQuantity(item.id, newQuantity));
     }
   };
-
-
 
   return (
     <div className="cart-item">

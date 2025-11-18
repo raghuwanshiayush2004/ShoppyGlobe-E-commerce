@@ -7,7 +7,6 @@ const Categories = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-
   useEffect(() => {
     const fetchCategories = async () => {
       try {
@@ -23,12 +22,11 @@ const Categories = () => {
 
     fetchCategories();
   }, []);
+
   const handleCategoryClick = (categorySlug) => {
     // Navigate to home page with category filter
     navigate(`/?category=${categorySlug}`);
   };
-
-
 
   const categoryIcons = {
     smartphones: '📱',

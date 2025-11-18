@@ -9,7 +9,7 @@ const Cart = () => {
   const cartItems = useSelector(getCartItems);
   const cartTotal = useSelector(getCartTotal);
 
-if (cartItems.length === 0) {
+  if (cartItems.length === 0) {
     return (
       <div className="cart empty-cart">
         <div className="container">
@@ -23,7 +23,7 @@ if (cartItems.length === 0) {
     );
   }
 
-return (
+  return (
     <div className="cart">
       <div className="container">
         <h2>Your Cart</h2>
@@ -32,8 +32,6 @@ return (
             {cartItems.map(item => (
               <CartItem key={item.id} item={item} />
             ))}
-
-  
           </div>
           <div className="cart-summary">
             <h3>Order Summary</h3>

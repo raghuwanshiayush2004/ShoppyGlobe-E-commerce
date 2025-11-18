@@ -16,7 +16,6 @@ const Footer = () => {
               Your trusted online shopping destination. We provide the best products 
               with excellent customer service and fast delivery.
             </p>
-
             <div className="social-links">
               <a href="#" className="social-link">📘</a>
               <a href="#" className="social-link">🐦</a>
@@ -32,7 +31,6 @@ const Footer = () => {
               <li><Link to="/categories">📂 Categories</Link></li>
               <li><Link to="/about">ℹ️ About Us</Link></li>
               <li><Link to="/cart">🛒 Shopping Cart</Link></li>
-
             </ul>
           </div>
 
@@ -50,8 +48,8 @@ const Footer = () => {
             <h4>Contact Info</h4>
             <div className="contact-info">
               <p>📧 support@shoppyglobe.com</p>
-              <p>📞 +1 (91) 123-4567</p>
-              <p>📍 123 Shopping Street, Retail ABC</p>
+              <p>📞 +(91) 123-4567</p>
+              <p>📍 123 Shopping Street, RC 12345</p>
             </div>
             <div className="payment-methods">
               <span>💳</span>

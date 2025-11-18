@@ -18,7 +18,6 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
-
   return (
     <header className="header">
       <div className="container">
@@ -26,7 +25,6 @@ const Header = () => {
           <div className="logo-icon">🛍️</div>
           <h1>ShoppyGlobe</h1>
         </Link>
-
 
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <Link to="/" onClick={() => setIsMenuOpen(false)}>

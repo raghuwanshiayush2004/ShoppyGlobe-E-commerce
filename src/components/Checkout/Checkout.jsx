@@ -23,25 +23,23 @@ const Checkout = () => {
     cvv: ''
   });
 
-const handleInputChange = (e) => {
+  const handleInputChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-
   const handlePlaceOrder = (e) => {
     e.preventDefault();
     // Simulate order processing
     setOrderPlaced(true);
     dispatch(clearCart());
-        setTimeout(() => {
+    
+    setTimeout(() => {
       navigate('/');
     }, 3000);
   };
-
-
 
   if (orderPlaced) {
     return (

@@ -12,11 +12,11 @@ const Signup = () => {
     password: '',
     confirmPassword: ''
   });
-
-
+  
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { loading, error } = useSelector(state => state.auth);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -24,16 +24,14 @@ const Signup = () => {
     });
   };
 
-
-
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    
     if (formData.password !== formData.confirmPassword) {
       alert("Passwords don't match!");
       return;
     }
-
+    
     dispatch(signup(formData, navigate));
   };
 
@@ -48,7 +46,7 @@ const Signup = () => {
 
         <form onSubmit={handleSubmit} className="auth-form">
           {error && <div className="auth-error">{error}</div>}
-
+          
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="firstName">First Name</label>
@@ -62,7 +60,7 @@ const Signup = () => {
                 placeholder="First name"
               />
             </div>
-
+            
             <div className="form-group">
               <label htmlFor="lastName">Last Name</label>
               <input

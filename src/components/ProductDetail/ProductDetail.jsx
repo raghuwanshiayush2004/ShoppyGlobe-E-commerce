@@ -18,27 +18,25 @@ const ProductDetail = () => {
   if (error) return <div className="error">Error: {error}</div>;
   if (!product) return <div className="error">Product not found</div>;
 
-const handleAddToCart = () => {
+  const handleAddToCart = () => {
     if (!isAuthenticated) {
       alert('Please login to add items to cart!');
       navigate('/login');
       return;
     }
 
-
     for (let i = 0; i < quantity; i++) {
       dispatch(addToCart(product));
     }
     alert(`${quantity} ${product.title} added to cart!`);
   };
-const handleBuyNow = () => {
+
+  const handleBuyNow = () => {
     if (!isAuthenticated) {
       alert('Please login to proceed with purchase!');
       navigate('/login');
       return;
     }
-
-
     handleAddToCart();
     navigate('/cart');
   };

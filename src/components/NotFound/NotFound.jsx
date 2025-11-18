@@ -13,7 +13,6 @@ const NotFound = () => {
           <Link to="/" className="home-link">
             Go Back Home
           </Link>
-
         </div>
       </div>
     </div>

@@ -14,18 +14,16 @@ const ProductList = () => {
   const [selectedCategory, setSelectedCategory] = useState('');
 
   // Get category from URL parameters
-useEffect(() => {
+  useEffect(() => {
     const category = searchParams.get('category');
     if (category) {
       setSelectedCategory(category);
     }
   }, [searchParams]);
 
- const setSearchTerm = (term) => {
+  const setSearchTerm = (term) => {
     dispatch({ type: 'SET_SEARCH_TERM', payload: term });
   };
-
-
 
   // Filter products based on search term and category
   const filteredProducts = products.filter(product => {
